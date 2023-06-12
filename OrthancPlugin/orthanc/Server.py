@@ -159,20 +159,20 @@ if not os.path.exists(pretrained):
     print("Checkpoint not found")
     
 
-model_name = "ssd512"
+model_name = "SSD"
+figsize = 512
+trunc = False
 backbone_name = "resnet152"
-input_size = (512,512)
 
-
-if "ssd" in model_name:
-	model = SSD(model_name, backbone=ResNet(backbone_name), num_classes=2, figsize = 512)
-	dboxes = generate_dboxes(model=model_name)
+if "SSD" in model_name:
+    model = SSD(model_name, trunc, backbone=ResNet(backbone_name), figsize=figsize, num_classes=2)
 else:
-	model = Textboxes(model_name, backbone=ResNet(backbone_name), num_classes=2)
-	dboxes = generate_dboxes(model=model_name)
+    model = Textboxes(model_name, trunc, backbone=ResNet(backbone_name), figsize=figsize, num_classes=2)
+
+dboxes = generate_dboxes(model_name, trunc, figsize)
 	
 encoder = Encoder(dboxes)
-transformer = SSDTransformer(dboxes, input_size, val=True)
+transformer = SSDTransformer(dboxes, (figsize, figsize), val=True)
 
 if torch.cuda.is_available():
     checkpoint = torch.load(pretrained)

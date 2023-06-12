@@ -3,7 +3,7 @@
     <header>
       <h1>MedTextCleaner</h1>
       <div class="button-group">
-        <button class="redact-button" @click="redact">Download dicom</button>
+        <button class="redact-button" @click="redact">Download DICOM</button>
       </div>
     </header>
     <tui-image-editor
