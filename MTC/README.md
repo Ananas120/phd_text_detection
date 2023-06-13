@@ -1,4 +1,4 @@
-# MedTetCleaner
+# MedTextCleaner
 
 ## Project setup
 ```
