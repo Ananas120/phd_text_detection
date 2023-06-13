@@ -17,7 +17,7 @@ To start the setup, type: `docker-compose up --build`
 
 # demo
 
-- open your Orthanc Explorer on [http://localhost:8000](http://localhost:8000)
+- open your Orthanc Explorer on [http://localhost:8000](http://localhost:8000) (username: demo, password: demo)
 - upload a study
 - browse to an instance, you'll now see a button "MedTextCleaer" that will redirect to the MTC user interface
 - after a short period of time, rectangles will be drawn on the image where text areas have been located
