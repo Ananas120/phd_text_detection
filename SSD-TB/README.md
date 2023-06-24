@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Here is my pytorch implementation of SSD and TextBoxes. These models are based on original model (SSD-VGG16) described in the paper [SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325) and [TextBoxes](https://arxiv.org/abs/1611.06779).
+Here is my pytorch implementation of SSD and TextBoxes. These models are based on original model (SSD-VGG16) described in the paper [SSD: Single Shot MultiBox Detector](https://arxiv.org/pdf/1512.02325) and [TextBoxes](https://arxiv.org/abs/1611.06779). This code is based on the SSD implementation of [uvipen](https://github.com/uvipen/SSD-pytorch/tree/main) which borrows many parts from [NVIDIA Deep Learning examples](https://github.com/NVIDIA/DeepLearningExamples/tree/master/PyTorch/Detection/SSD) and [ssd pytorch](https://github.com/qfgaohao/pytorch-ssd).
 
 
 - **Dataset**:
@@ -30,4 +30,3 @@ You could download my trained weight for SSD512-Resnet152 and TB_noOffset512-tru
 
 - Minghui Liao, Baoguang Shi, Xiang Bai, Xinggang Wang, and Wenyu Liu. "Textboxes: A fast text detector with a single deep neural network", 2016 [TextBoxes](https://arxiv.org/abs/1611.06779).
 
-- My implementation is inspired by and therefore borrows many parts from [NVIDIA Deep Learning examples](https://github.com/NVIDIA/DeepLearningExamples/tree/master/PyTorch/Detection/SSD) and [ssd pytorch](https://github.com/qfgaohao/pytorch-ssd) and [uvipen SSD-pytorch](https://github.com/uvipen/SSD-pytorch/tree/main)
