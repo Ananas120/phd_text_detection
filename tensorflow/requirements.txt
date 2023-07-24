@@ -1,0 +1,17 @@
+Unidecode
+graphviz
+imageio
+matplotlib
+numpy
+opencv_python
+pandas
+regex
+requests
+tensorflow==2.10.0
+tensorflow_io
+tensorflow_addons
+tensorflow_datasets
+tqdm
+umap_learn
+nibabel
+pydicom
