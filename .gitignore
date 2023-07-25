@@ -6,8 +6,8 @@
 *.npz
 *.tneosr
 *.stensor
-pretrained_models/
-totalsegmentator/
+*.pth
+tensorflow/pretrained_models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
